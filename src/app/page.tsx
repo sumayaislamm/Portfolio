@@ -1,3 +1,4 @@
+import FeaturedProject from "../components/home/FeaturedProject";
 import Hero from "../components/home/Hero";
 
 
@@ -5,12 +6,12 @@ export default function Home() {
   return (
     <>
       <Hero />
-      {/* <FeaturedProject />
-      <Projects />
+      <FeaturedProject /> 
+      {/* <Projects />
       <TechStack />
       <Services />
       <Experience />
-      <ContactCTA /> */}
+      <ContactCTA />  */}
     </>
   );
 }
