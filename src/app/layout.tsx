@@ -69,6 +69,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+
   title: "Sumaya Islam | Full-Stack Developer",
   description:
     "Portfolio of Sumaya Islam — Full-Stack Developer specializing in React, Next.js, TypeScript, Node.js, and modern web applications.",
