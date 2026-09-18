@@ -52,11 +52,6 @@ export default function LoadingScreen() {
   if (!isVisible) return null;
 
   return (
-    // <div
-    //   className={`fixed inset-0 z-[9999] overflow-hidden bg-background text-foreground transition-opacity duration-500 ${
-    //     progress === 100 ? "opacity-0" : "opacity-100"
-    //   }`}
-    // >
     <div
       className={`fixed inset-0 z-9999 overflow-hidden bg-background text-foreground transition-opacity duration-500 ${
         progress === 100 ? "opacity-0" : "opacity-100"
