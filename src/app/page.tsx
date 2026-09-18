@@ -1,9 +1,16 @@
-import LoadingScreen from "@/src/components/LoadingScreen";
+import Hero from "../components/home/Hero";
+
 
 export default function Home() {
   return (
-    <div>
-      <LoadingScreen></LoadingScreen>
-    </div>
+    <>
+      <Hero />
+      {/* <FeaturedProject />
+      <Projects />
+      <TechStack />
+      <Services />
+      <Experience />
+      <ContactCTA /> */}
+    </>
   );
 }

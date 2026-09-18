@@ -14,12 +14,6 @@ const navItems = [
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isDark, setIsDark] = useState(false);
-  //   const [isDark, setIsDark] = useState(() => {
-  //     if (typeof window === "undefined") return false;
-
-  //     return localStorage.getItem("theme") === "dark";
-  //   });
 
   // Handle scroll
   useEffect(() => {
@@ -34,36 +28,22 @@ export default function Navbar() {
     };
   }, []);
 
-  // Read saved theme after component mounts
+  // Apply saved theme without React state
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
 
     if (savedTheme === "dark") {
       document.documentElement.classList.add("dark");
-      setIsDark(true);
     } else if (savedTheme === "light") {
       document.documentElement.classList.remove("dark");
-      setIsDark(false);
     }
   }, []);
-  //   useEffect(() => {
-  //     const savedTheme = localStorage.getItem("theme");
 
-  //     if (savedTheme === "dark") {
-  //       document.documentElement.classList.add("dark");
-  //       setIsDark(true);
-  //     } else if (savedTheme === "light") {
-  //       document.documentElement.classList.remove("dark");
-  //       setIsDark(false);
-  //     }
-  //   }, []);
   const toggleTheme = () => {
     const html = document.documentElement;
     const dark = !html.classList.contains("dark");
 
     html.classList.toggle("dark", dark);
-    setIsDark(dark);
-
     localStorage.setItem("theme", dark ? "dark" : "light");
   };
 
@@ -73,17 +53,14 @@ export default function Navbar() {
 
   return (
     <>
+      {/* Navbar */}
       <header
         className={`fixed left-1/2 z-50 w-[calc(100%-2rem)] max-w-6xl -translate-x-1/2 transition-all duration-500 ${
           isScrolled ? "top-3" : "top-5"
         }`}
       >
         <nav
-          className={`flex items-center justify-between border px-4 py-3 transition-all duration-500 sm:px-5 ${
-            // isScrolled
-            //   ? "rounded-2xl border-border/70 bg-background/75 shadow-lg backdrop-blur-xl"
-            //   : "rounded-full border-border/50 bg-background/60 backdrop-blur-md"
-
+          className={`flex items-center justify-between px-4 py-3 transition-all duration-500 sm:px-5 ${
             isScrolled
               ? "rounded-2xl border border-foreground/15 bg-background/75 shadow-lg backdrop-blur-xl"
               : "rounded-full border border-foreground/10 bg-background/60 backdrop-blur-md"
@@ -118,6 +95,7 @@ export default function Navbar() {
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-60" />
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-primary" />
               </span>
+
               Available
             </div>
 
@@ -126,13 +104,10 @@ export default function Navbar() {
               type="button"
               onClick={toggleTheme}
               aria-label="Toggle theme"
-              className="flex h-9 w-9 items-center justify-center rounded-full border border-border transition-all duration-300 hover:border-primary hover:bg-muted"
+              className="group flex h-9 w-9 items-center justify-center rounded-full border border-border transition-all duration-300 hover:border-primary hover:bg-muted"
             >
-              {isDark ? (
-                <Sun className="h-4 w-4" />
-              ) : (
-                <Moon className="h-4 w-4" />
-              )}
+              <Moon className="h-4 w-4 dark:hidden" />
+              <Sun className="hidden h-4 w-4 dark:block" />
             </button>
 
             {/* Mobile Menu */}

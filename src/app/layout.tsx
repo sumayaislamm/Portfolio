@@ -44,7 +44,7 @@ import {
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import LoadingScreen from "../components/LoadingScreen";
-import Navbar from "../components/lauout/Navbar";
+import Navbar from "../components/layout/Navbar";
 
 
 
