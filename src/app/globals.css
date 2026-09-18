@@ -151,3 +151,9 @@
     transform: translateY(-20px);
   }
 }
+
+/* Smooth Scrolling  */
+html {
+  @apply font-serif;
+  scroll-behavior: smooth;
+}
