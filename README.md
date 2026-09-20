@@ -1,36 +1,206 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sumaya Islam — Developer Portfolio
 
-## Getting Started
+> Full-Stack Developer | Frontend Developer | Backend Developer
 
-First, run the development server:
+A modern, interactive developer portfolio built with **Next.js, TypeScript, Tailwind CSS, and Framer Motion**.
+
+🌐 **Live Portfolio:** https://portfolio-five-mu-q8grw5lat5.vercel.app/
+
+---
+
+## ✨ Features
+
+* Modern and responsive design
+* Light & dark mode
+* Interactive hero section
+* Custom developer cursor
+* Animated loading screen
+* Mouse-following and parallax effects
+* Interactive technology cards
+* Project showcase
+* Animated statistics section
+* Responsive navigation
+* Smooth micro-interactions
+* Mobile-friendly experience
+* GitHub, LinkedIn and contact integration
+* SEO-friendly structure
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+* Next.js
+* React
+* TypeScript
+* Tailwind CSS
+* Framer Motion
+* Lucide React
+
+### Tools
+
+* Git
+* GitHub
+* VS Code
+* Vercel
+
+---
+
+## 📂 Project Structure
+
+```text
+src/
+├── app/
+│   ├── layout.tsx
+│   ├── page.tsx
+│   └── globals.css
+│
+├── components/
+│   ├── layout/
+│   │   ├── Navbar.tsx
+│   │   └── Footer.tsx
+│   │
+│   ├── home/
+│   │   ├── Hero.tsx
+│   │   ├── Stats.tsx
+│   │   ├── FeaturedProject.tsx
+│   │   ├── Projects.tsx
+│   │   ├── TechStack.tsx
+│   │   ├── Services.tsx
+│   │   ├── Experience.tsx
+│   │   └── ContactCTA.tsx
+│   │
+│   ├── animations/
+│   │   ├── Reveal.tsx
+│   │   ├── ScrollProgress.tsx
+│   │   ├── MagneticButton.tsx
+│   │   └── CustomCursor.tsx
+│   │
+│   ├── LoadingScreen.tsx
+│   └── ThemeToggle.tsx
+│
+├── data/
+│   ├── projects.ts
+│   ├── skills.ts
+│   └── experience.ts
+│
+└── lib/
+    ├── constants.ts
+    └── utils.ts
+```
+
+---
+
+## 🚀 Getting Started
+
+Clone the repository:
+
+```bash
+git clone YOUR_GITHUB_REPOSITORY_URL
+```
+
+Navigate into the project:
+
+```bash
+cd portfolio
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open the application in your browser:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🔐 Environment Variables
 
-To learn more about Next.js, take a look at the following resources:
+This portfolio currently does not require any sensitive environment variables for its core functionality.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+If environment variables are added in the future, create:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```text
+.env.local
+```
 
-## Deploy on Vercel
+Never commit API keys, passwords, database credentials, or other private secrets to GitHub.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 💼 Featured Project
+
+### Nestora
+
+Nestora is a modern full-stack rental platform designed to connect property seekers with landlords through a clean and user-focused experience.
+
+**Technologies:**
+
+* Next.js
+* TypeScript
+* Tailwind CSS
+* Node.js
+* Prisma
+* PostgreSQL
+* Cloudinary
+
+---
+
+## 🎯 Portfolio Focus
+
+This portfolio demonstrates my experience with:
+
+* Frontend development
+* Full-stack web development
+* Responsive UI development
+* REST API integration
+* Authentication
+* Database-driven applications
+* Modern JavaScript/TypeScript development
+* Clean and maintainable code
+* Interactive user experiences
+
+---
+
+## 👩‍💻 About Me
+
+I'm **Sumaya Islam**, a Full-Stack Developer focused on building modern, responsive and scalable web applications.
+
+I work primarily with **React, Next.js, TypeScript, Node.js, PostgreSQL and Prisma**, with a strong interest in building practical products that solve real-world problems.
+
+---
+
+## 🔗 Connect With Me
+
+**GitHub:**
+https://github.com/sumayaislamm
+
+**LinkedIn:**
+https://www.linkedin.com/in/sumayaislamm/
+
+**Email:**
+[sheikhsumaya622@gmail.com](mailto:sheikhsumaya622@gmail.com)
+
+---
+
+## 🌐 Live Portfolio
+
+**https://portfolio-five-mu-q8grw5lat5.vercel.app/**
+
+---
+
+## 📄 License
+
+This project is a personal portfolio website created for professional and demonstration purposes.
