@@ -45,6 +45,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import LoadingScreen from "../components/LoadingScreen";
 import Navbar from "../components/layout/Navbar";
+import ScrollProgress from "../components/animations/ScrollProgress";
 
 
 
@@ -92,7 +93,9 @@ export default function RootLayout({
       )}
     >
       <body className="min-h-full flex flex-col">
+         <ScrollProgress />
         <LoadingScreen />
+
         <Navbar />
 
         {children}
