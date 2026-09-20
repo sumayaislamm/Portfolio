@@ -61,7 +61,7 @@ export default function FeaturedProject() {
             <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-foreground/5" />
 
             <img
-              src="/images/projects/nestora/hero.png"
+              src="nestora.png"
               alt="Nestora rental platform"
               className="h-full w-full object-cover transition-transform duration-700 hover:scale-[1.02]"
             />
