@@ -253,7 +253,7 @@ export default function FeaturedProject() {
       id="work"
       className="relative overflow-hidden border-b border-border/70"
     >
-      <div className="mx-auto max-w-7xl px-6 py-24 sm:px-8 lg:px-12 lg:py-32">
+      <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12 py-4 ">
 
         {/* =====================================
             SECTION HEADER

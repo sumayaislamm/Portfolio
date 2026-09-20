@@ -4,12 +4,14 @@ import FeaturedProject from "../components/home/FeaturedProject";
 import Hero from "../components/home/Hero";
 import Projects from "../components/home/Projects";
 import Services from "../components/home/Services";
+import Stats from "../components/home/Stats";
 import TechStack from "../components/home/TechStack";
 
 export default function Home() {
   return (
     <>
       <Hero />
+      <Stats />
       <FeaturedProject />
       <Projects />
       <TechStack />
