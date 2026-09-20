@@ -442,7 +442,7 @@ export default function Projects() {
       id="projects"
       className="relative border-b border-border/70"
     >
-      <div className="mx-auto max-w-7xl px-6 py-24 sm:px-8 lg:px-12 lg:py-32">
+      <div className="mx-auto max-w-7xl px-6 py-4 sm:px-8 lg:px-12 ">
 
         {/* Header */}
 
