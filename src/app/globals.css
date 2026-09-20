@@ -157,3 +157,38 @@ html {
   @apply font-serif;
   scroll-behavior: smooth;
 }
+
+
+/* =========================================
+   CUSTOM DEVELOPER CURSOR
+========================================= */
+
+@media (hover: hover) and (pointer: fine) {
+  html,
+  body {
+    cursor: none;
+  }
+
+  a,
+  button,
+  [role="button"],
+  [data-cursor] {
+    cursor: none;
+  }
+}
+
+/* Keep text selection usable */
+
+::selection {
+  background: var(--foreground);
+  color: var(--background);
+}
+
+/* Prevent cursor artifacts on touch devices */
+
+@media (hover: none), (pointer: coarse) {
+  html,
+  body {
+    cursor: auto;
+  }
+}

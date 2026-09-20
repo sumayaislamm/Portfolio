@@ -49,7 +49,7 @@ export default function FeaturedProject() {
         </motion.div>
 
         {/* Project Card */}
-        <motion.div
+        <motion.div 
           initial={{ opacity: 0, y: 35 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
@@ -57,7 +57,7 @@ export default function FeaturedProject() {
           className="mt-12 overflow-hidden rounded-3xl border border-border bg-card shadow-sm"
         >
           {/* Project Preview */}
-          <div className="relative aspect-[16/9] overflow-hidden bg-muted">
+          <div   data-cursor="NESTORA" className="relative aspect-[16/9] overflow-hidden bg-muted">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-foreground/5" />
 
             <img

@@ -53,7 +53,7 @@ export default function TechStack() {
       id="about"
       className="relative overflow-hidden border-t border-border/70 py-4 "
     >
-      <div className="mx-auto max-w-6xl px-6 sm:px-8">
+      <div  data-cursor="Technology" className="mx-auto max-w-6xl px-6 sm:px-8">
         {/* Header */}
         <div className="mb-14 sm:mb-20">
           <motion.p

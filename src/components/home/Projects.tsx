@@ -39,7 +39,7 @@ export default function Projects() {
       id="projects"
       className="relative overflow-hidden border-t border-border/70 pt-2"
     >
-      <div className="mx-auto max-w-6xl px-6 sm:px-8">
+      <div  data-cursor="Projects" className="mx-auto max-w-6xl px-6 sm:px-8">
         {/* Section Header */}
         <div className="mb-14 flex flex-col justify-between gap-6 sm:mb-20 md:flex-row md:items-end">
           <div>

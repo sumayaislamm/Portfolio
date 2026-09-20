@@ -27,7 +27,7 @@ export default function Experience() {
       id="experience"
       className="relative overflow-hidden border-t border-border/70 py-4"
     >
-      <div className="mx-auto max-w-6xl px-6 sm:px-8">
+      <div  data-cursor="Experience" className="mx-auto max-w-6xl px-6 sm:px-8">
         {/* Header */}
         <div className="mb-14 sm:mb-20">
           <motion.p

@@ -10,7 +10,7 @@ export default function ContactCTA() {
       id="contact"
       className="relative overflow-hidden border-t border-border/70 py-4"
     >
-      <div className="mx-auto max-w-6xl px-6 sm:px-8">
+      <div  data-cursor="Contact" className="mx-auto max-w-6xl px-6 sm:px-8">
         <div className="relative overflow-hidden rounded-3xl border border-border bg-card px-6 py-14 sm:px-10 sm:py-20 lg:px-16">
           {/* Decorative grid */}
           <div

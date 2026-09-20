@@ -42,7 +42,7 @@ const services = [
 export default function Services() {
   return (
     <section className="relative overflow-hidden border-t border-border/70 py-4">
-      <div className="mx-auto max-w-6xl px-6 sm:px-8">
+      <div  data-cursor="Services" className="mx-auto max-w-6xl px-6 sm:px-8">
         {/* Header */}
         <div className="mb-14 flex flex-col justify-between gap-6 sm:mb-20 lg:flex-row lg:items-end">
           <div>
